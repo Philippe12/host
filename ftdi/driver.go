@@ -209,6 +209,7 @@ func (d *driver) reset() {
 }
 
 func init() {
+	d2xx.version()
 	if d2xx.Available {
 		drv.reset()
 		drv.resetLog()
